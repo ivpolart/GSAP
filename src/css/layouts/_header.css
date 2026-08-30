@@ -1,0 +1,27 @@
+.header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	z-index: 999;
+
+	.menu-list {
+		display: flex;
+		flex-wrap: wrap;
+		margin: 0;
+		padding: 0;
+		list-style: none;
+
+		li {
+			background: rgba(20, 20, 20, 0.5);
+			text-align: center;
+			text-transform: uppercase;
+			justify-content: center;
+			align-items: center;
+			text-decoration: none;
+			display: flex;
+			flex: 1;
+			border-radius: 5px;
+			backdrop-filter: blur(16px);
+		}
+	}
+}

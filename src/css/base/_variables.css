@@ -1,0 +1,64 @@
+@custom-media --phone-lg (width >= 576px);
+@custom-media --tablet (width >= 768px);
+@custom-media --desktop (width >= 1024px);
+@custom-media --desktop-lg (width >= 1280px);
+@custom-media --widescreen (width >= 1440px);
+
+:root {
+	/* Colors */
+	--color-black: #2A2119;
+	--color-gray: #999;
+	--color-white: #fff;
+	--color-yellow: #FFDA3D;
+	
+	/* Font families */
+	--font-sans: 'Arial', 'Helvetica', sans-serif;
+	--font-serif: 'Times New Roman', 'Times', serif;
+	
+	/* Selection styles */
+	--selection-bg: var(--color-black);
+	--selection-text-color: var(--color-white);
+	
+	/* Body styles */
+	--body-scroll-padding: 30px;
+	--body-bg: var(--color-white);
+	--body-font-weight: 400;
+	--body-font-family: var(--font-sans);
+	--body-font-size: 16px;
+	--body-line-height: 1.5;
+	--body-text-color: var(--color-black);
+	
+	/* p, ul, ol margins */
+	--paragraph-margin: 0 0 1em;
+	--paragraph-text-wrap: pretty;
+	
+	/* Headings */
+	--headings-font-weight: 700;
+	--headings-font-family: inherit;
+	--headings-line-height: 1.2;
+	--headings-color: inherit;
+	--headings-margin: 0 0 0.5em;
+	--headings-text-wrap: balance;
+	
+	/* Heading Font sizes */
+	--fs-h1: clamp(32px, 3.333vw, 40px);
+	--fs-h2: clamp(28px, 2.917vw, 35px);
+	--fs-h3: clamp(26px, 2.834vw, 34px);
+	--fs-h4: clamp(24px, 2.584vw, 31px);
+	--fs-h5: clamp(22px, 2.334vw, 28px);
+	--fs-h6: clamp(20px, 2.167vw, 26px);
+	
+	/* Links */
+	--link-color: inherit;
+	--link-text-decoration: underline;
+	--link-text-decoration-hover: none;
+	
+	/* Misc */
+	--animation-duration: 0.3s;
+	--animation-timing-function: ease-in-out;
+	
+	/* Layout */
+	/* --page-width: 1420;
+	--container-width: 1408; */
+	--page-offset: 20px;
+}

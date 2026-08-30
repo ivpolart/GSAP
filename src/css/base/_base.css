@@ -1,0 +1,63 @@
+::selection {
+	background: var(--selection-bg);
+	color: var(--selection-text-color);
+}
+
+html {
+	scroll-behavior: smooth;
+	scroll-padding-top: var(--body-scroll-padding);
+}
+
+body {
+	min-width: 320px;
+	background: var(--body-bg);
+	font-weight: var(--body-font-weight);
+	font-family: var(--body-font-family);
+	font-size: var(--body-font-size);
+	line-height: var(--body-line-height);
+	color: var(--body-text-color);
+	display: flex;
+	flex-direction: column;
+	
+	:where(h1, h2, h3, h4, h5, h6, p, ul, ol, dl, blockquote):last-child {
+		margin-bottom: 0;
+	}
+}
+
+footer {
+	margin-top: auto;
+}
+
+p, ul, ol, dl {
+	margin: var(--paragraph-margin);
+}
+
+a {
+	color: var(--link-color);
+	text-decoration: var(--link-text-decoration);
+
+	&:hover {
+		text-decoration: var(--link-text-decoration-hover);
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: var(--headings-font-weight);
+	font-family: var(--headings-font-family);
+	line-height: var(--headings-line-height);
+	color: var(--headings-color);
+	margin: var(--headings-margin);
+}
+
+h1,
+.text-h1 { font-size: var(--fs-h1); }
+h2,
+.text-h2 { font-size: var(--fs-h2); }
+h3,
+.text-h3 { font-size: var(--fs-h3); }
+h4,
+.text-h4 { font-size: var(--fs-h4); }
+h5,
+.text-h5 { font-size: var(--fs-h5); }
+h6,
+.text-h6 { font-size: var(--fs-h6); }

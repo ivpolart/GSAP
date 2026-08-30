@@ -1,0 +1,65 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+body,
+h1, h2, h3, h4, h5, h6,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+
+html {
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+	min-height: 100svh;
+	-webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+ul,
+ol {
+	padding: 0;
+	list-style-position: inside;
+}
+
+button,
+input,
+select,
+textarea {
+	font-family: inherit;
+	font-size: 100%;
+}
+
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+
+p,
+h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+p, ul, ol, dl, blockquote {
+	text-wrap: var(--paragraph-text-wrap);
+}
+
+h1, h2, h3, h4, h5, h6 {
+	text-wrap: var(--headings-text-wrap);
+}
