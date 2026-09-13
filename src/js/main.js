@@ -17,6 +17,14 @@ function initGSAP() {
         smoothTouch: 0.1
     });
 
+    ScrollTrigger.create({
+        trigger: ".intro-section",
+        start: "top top",
+        end: "+=100%",
+        pin: true,
+        pinSpacing: false
+    });
+
     const section = document.querySelector(".beliefs-section");
     const scroll = section.querySelector(".beliefs__scroll");
     const titleWrapper = section.querySelector(".beliefs__scroll-title");
@@ -205,13 +213,6 @@ function initGSAP() {
 		opacity: 0,
 		duration: 0.3
 	}, "<");
-
-    ScrollTrigger.create({
-        trigger: ".intro-section",
-        start: "top top",
-        end: "center center",
-        pin: true
-    });
 }
 
 function initSwitcherImages() {

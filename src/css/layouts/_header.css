@@ -20,15 +20,36 @@
 			justify-content: center;
 			align-items: center;
 			display: flex;
-			flex: 1;
+			flex: 0 0 calc(40% - 4px);
 			border-radius: 4px;
+			order: inherit;
+
+			@media (--tablet) {
+				flex: 1;
+				order: unset;
+			}
 
 			&:first-child {
 				background: rgba(42, 33, 25, 0.48);
+				order: -1;
+				flex-basis: calc(60% - 4px);
+
+				@media (--tablet) {
+					flex: 1;
+				}
 			}
+
+			&:nth-child(2) {
+				order: 0;
+			}
+
+			&:nth-child(n + 3) {
+                flex: 1;
+            }
 
 			&:last-child {
 				background: var(--color-yellow);
+				order: -1;
 				
 				a {
 					color: var(--color-black);
@@ -38,10 +59,16 @@
 
 		a {
 			padding: 7px 10px;
+			width: 100%;
 			font-size: 12px;
 			color: var(--color-yellow);
 			text-decoration: none;
 			letter-spacing: 1px;
+			min-width: 0;
+
+			@media (--phone) {
+				white-space: nowrap;
+			}
 		}
 	}
 }
